@@ -15,16 +15,12 @@ public class Exercise25 {
 
     public static void printAndEmptyStack(Stack<String> stack) {
         while (!stack.isEmpty()) {
-            System.out.println(stack.peek());
-            stack.pop();
-
+            System.out.println(stack.pop());
         }
     }
 
     public static void main(String[] args) {
-        Stack<String> stack = createStack();
-        printAndEmptyStack(stack);
-
+        printAndEmptyStack(createStack());
     }
 }
 
